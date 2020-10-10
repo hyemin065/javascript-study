@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cal{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-gap:5px;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:space-around;
+    background:#999;
+    word-wrap: break-word;
+    word-break: break-all;
+    grid-area:1/1/2/span 4;
+    padding:10px;
+    color:#fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border:2px solid #666;
+}
+
+.result{
+    color:#000;
+    font-size: 1.3rem;
+}
+
+button{
+    outline: none;
+    border:2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+}
+
+.equal{
+    grid-area:6/3/7/5;
+}
+
+.clear-all{
+    grid-area:2/1/3/3;
+}
+
+.clear{
+    grid-area:2/3/3/4;
+}
+.oper{
+    grid-area:2/4/6/5;
+    display: flex;
+    flex-direction: column;
+}
+
+.oper > .btns{
+    flex:1;
+}
+
+.oper > .btns:not(:last-child){
+    margin:0 0 5px;
+}
