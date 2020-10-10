@@ -31,6 +31,7 @@ function timer(){
 }
 
 const start = ()=>{
+    clearInterval(interval);
     interval = setInterval(timer, 10);
 }
 
