@@ -10,7 +10,6 @@ for(const box of boxs){
     box.addEventListener("dragenter", enterDrag);
     box.addEventListener("dragleave", leaveDrag);
     box.addEventListener("drop", dragDrop);
-
 }
 
 function startDrag(){
