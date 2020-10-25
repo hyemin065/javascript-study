@@ -29,6 +29,7 @@ body {
     content: '';
     width: 15px;
     height: 15px;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,10 +40,12 @@ body {
     background-color: #463333; }
     .clock .second:after {
       content: '';
+      transform: translate(-50%, 0);
       position: absolute;
       left: 0;
-      width: 120px;
-      height: 2px;
+      bottom: 0;
+      width: 2px;
+      height: 120px;
       background-color: #eee;
       border-radius: 20px;
       z-index: -10; }
@@ -51,10 +54,12 @@ body {
     background-color: #ddd; }
     .clock .minute:after {
       content: '';
+      transform: translate(-50%, 0);
       position: absolute;
       left: 0;
-      width: 100px;
-      height: 4px;
+      bottom: 0;
+      width: 4px;
+      height: 100px;
       border-radius: 20px;
       background-color: #ddd;
       z-index: -10; }
@@ -63,10 +68,12 @@ body {
     background-color: #e1e1e1; }
     .clock .time:after {
       content: '';
+      transform: translate(-50%, 0);
       position: absolute;
       left: 0;
-      width: 60px;
-      height: 5px;
+      bottom: 0;
+      width: 5px;
+      height: 80px;
       border-radius: 20px;
       background-color: red;
       z-index: -10; }
